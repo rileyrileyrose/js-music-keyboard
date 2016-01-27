@@ -1,3 +1,23 @@
 $(document).ready( function() {
-  // your code here
+  $('.note.c').click(function(){
+    $('#cAudio').get(0).play();
+  });
+  $('.note.d').click(function(){
+    $('#dAudio').get(0).play();
+  });
+  $('.note.e').click(function(){
+    $('#eAudio').get(0).play();
+  });
+  $('.note.f').click(function(){
+    $('#fAudio').get(0).play();
+  });
+  $('.note.g').click(function(){
+    $('#gAudio').get(0).play();
+  });
+  $('.note.a').click(function(){
+    $('#aAudio').get(0).play();
+  });
+  $('.note.b').click(function(){
+    $('#bAudio').get(0).play();
+  });
 });
