@@ -1,60 +1,65 @@
 $(document).ready( function() {
 
+  // function to DRY playing audio
+  var playAudio = function (note_id) {
+    $(note_id).get(0).play();
+  };
+
   // playing the note on mouse click
 
   $('.note.c').click(function(){
-    $('#cAudio').get(0).play();
+    playAudio('#cAudio');
   });
   $('.note.d').click(function(){
-    $('#dAudio').get(0).play();
+    playAudio('#dAudio');
   });
   $('.note.e').click(function(){
-    $('#eAudio').get(0).play();
+    playAudio('#eAudio');
   });
   $('.note.f').click(function(){
-    $('#fAudio').get(0).play();
+    playAudio('#fAudio');
   });
   $('.note.g').click(function(){
-    $('#gAudio').get(0).play();
+    playAudio('#gAudio');
   });
   $('.note.a').click(function(){
-    $('#aAudio').get(0).play();
+    playAudio('#aAudio');
   });
   $('.note.b').click(function(){
-    $('#bAudio').get(0).play();
+    playAudio('#bAudio');
   });
 
   // playing the note on keyboard touch
 
   $(document).keydown(function(e){
-    switch (e.which)  {
+    switch (e.which) {
       // user presses c
       case 67:
-        $('#cAudio').get(0).play();
+        playAudio('#cAudio');
           break;
       // user presses d
       case 68:
-        $('#dAudio').get(0).play();
+        playAudio('#dAudio');
           break;
       // user presses e
       case 69:
-        $('#eAudio').get(0).play();
+        playAudio('#eAudio');
           break;
       // user presses f
       case 70:
-        $('#fAudio').get(0).play();
+        playAudio('#fAudio');
           break;
       // user presses g
       case 71:
-        $('#gAudio').get(0).play();
+        playAudio('#gAudio');
           break;
       // user presses a
       case 65:
-        $('#aAudio').get(0).play();
+        playAudio('#aAudio');
           break;
       // user presses b
       case 66:
-        $('#bAudio').get(0).play();
+        playAudio('#bAudio');
           break;
     }
   });
